@@ -22,6 +22,22 @@
 
 <div id="wrapper">
 	<div id="content">
+
+<h2>Dev notes</h2>
+<p>
+* For setup I would minify the assets (JS, CSS) via Grunt. For purpose of readability I have not.<br>
+Ideally I would add a h1 in header. Or for SEO reasons add a H1 in the #content and have header float at the top e.g. http://jaspaul.com<br>
+* For this test I have only supported webkit which covers ios, android 4.x, console devices. IE, Firefox and Opera instead tend to support w3c. 
+Though I have commercial experience to support older devices but If I do not get given a browser requirement spec, I will base my support of elements by both: Analytics and caniuse.com<br>
+* Sass should be split up into many files: variables.scss, functions.scss, global.scss, template.scss and modules.scss
+</p>
+<h3>Exercise 2:</h3>
+<p>Taken into account boxes may have different heights. Also there was nothing mentioned for layout on mobile, although not ideal but have kept same layout for mobile</p>
+<h3>Exercise 3:</h3>
+<p>Letting css do most of the hard work. JS will only set a class. This is more optimised and 3d hardware acceleration can be applied
+jQuery: by using document.getElementById('menu') instead of #menu it is twice as quick. Check for yourself ;) : https://jsperf.com/jquery-selectors-vs-native-api</p>
+
+
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A reiciendis sapiente modi ad dicta, necessitatibus totam eligendi assumenda! Tempore, totam! Eligendi dolorum adipisci reiciendis aspernatur nesciunt! Numquam, reiciendis qui magnam.</p>
 
 		<h2>Lorem ipsum dolor.</h2>

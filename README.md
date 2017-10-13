@@ -1,3 +1,19 @@
+Dev notes:
+* For setup I would minify the assets (JS, CSS) via Grunt. For purpose of readability I have not.
+* Ideally I would add a h1 in header. Or for SEO reasons add a H1 in the #content and have header float at the top e.g. http://jaspaul.com
+* Only support for webkit which covers ios, android 4.x, console devices. Firefox and Opera tend to support w3c. (Though I have commercial experience to support older devices). I base my support of elements by both: Analytics and caniuse.com
+* Sass should be split up into many files: variables.scss, functions.scss, global.scss, template.scss and modules.scss
+
+Exercise 2: 
+* Taken into account boxes may have different heights. Also there was nothing mentioned for layout on mobile, although not ideal but have kept same layout for mobile
+
+Exercise 3: 
+* Letting css do most of the hard work. JS will only set a class. This is more optimised and 3d hardware acceleration can be applied
+* jQuery: by using document.getElementById('menu') instead of #menu it is twice as quick. Check for yourself ;) :
+https://jsperf.com/jquery-selectors-vs-native-api
+
+
+
 ![Valtech logo](http://i.imgur.com/32Oipl4.png "Valtech logo")
 
 UI exercise
@@ -50,19 +66,6 @@ Finish up
 Once you're finished, send us a link to your fork.
 
 
-Dev notes:
-* For setup I would minify the assets (JS, CSS) via Grunt. For purpose of readability I have not.
-* Ideally I would add a h1 in header. Or for SEO reasons add a H1 in the #content and have header float at the top e.g. http://jaspaul.com
-* Only support for webkit which covers ios, android 4.x, console devices. Firefox and Opera tend to support w3c. (Though I have commercial experience to support older devices). I base my support of elements by both: Analytics and caniuse.com
-* Sass should be split up into many files: variables.scss, functions.scss, global.scss, template.scss and modules.scss
-
-Exercise 2: 
-* Taken into account boxes may have different heights. Also there was nothing mentioned for layout on mobile, although not ideal but have kept same layout for mobile
-
-Exercise 3: 
-* Letting css do most of the hard work. JS will only set a class. This is more optimised and 3d hardware acceleration can be applied
-* jQuery: by using document.getElementById('menu') instead of #menu it is twice as quick. Check for yourself ;) :
-https://jsperf.com/jquery-selectors-vs-native-api
 
 
 
