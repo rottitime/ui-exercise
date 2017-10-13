@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+/* Variables */
+$color1: #f4f4f4;  	//Paper
+$color2: #333333;	//Charcoal
+$color3: #dcd0c0;	//Silk
+$color4: #c0b283;	//Gold Pale
+$color5: #c0c0c0;	//Grey
+
+$spacing: 20px;
+$promo-list-spacing: $spacing;
+
+
+/* Global styles */
+body {
+	font-family: 'Roboto Condensed', Arial,sans-serif;
+}
+h1, h2, h3, h4 {
+	color: $color2;
+}
+h2 {
+	margin: 0 0 $spacing;
+}
+a {
+	cursor: pointer;
+	color: $color4;
+	text-decoration: none;
+	transition: color 0.5s;
+	&:hover {
+		color: rgba($color4, 0.7);
+	}
+}
+p {
+	color: $color5;
+	margin: 0 0 $spacing;
+}
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+li {
+	margin: 0;
+}
+
+/* Template styles */
+#head {
+	border: 3px solid $color4;
+	border-radius: 3px;
+	background-color: $color1;
+	padding: 20px 30px;
+	nav {
+		ul {
+			display: block;
+		}
+		li {
+			display: inline-block;
+		}
+		a {
+			padding: 5px 20px;
+		}
+	}
+	margin-bottom: 30px;
+}
+
+#wrapper {
+	display: -webkit-flex;
+	display: flex;
+}
+#content {
+	width: 100%;
+	padding: $spacing;
+}
+
+#sidebar {
+	width: 30%;
+	padding: $spacing;
+}
+
+/* Modules */
+.promo-list {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+	margin: 0 0 -$spacing 0;
+	img {
+		width: 100%;
+	}
+	h3 {
+		margin-bottom: 20px;
+	}
+	img {
+		margin-bottom: 18px;
+	}
+	li {
+		width: calc(33.33333333333333% - #{$spacing * 2});
+		margin: $spacing;
+	}
+}

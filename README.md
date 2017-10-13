@@ -51,6 +51,9 @@ Once you're finished, send us a link to your fork.
 
 
 Dev notes:
+* For setup I would minify the assets (JS, CSS) via Grunt. For purpose of readability I have not.
 * Ideally I would add a h1 in header. Or for SEO reasons add a H1 in the #content and have header float at the top e.g. http://jaspaul.com
-* Only support for webkit which covers ios, android 4.x, console devices. Firefox and Opera tend to support w3c as per latest anyaltics for many sites. (Though I have commercial experience to support older devices)
+* Only support for webkit which covers ios, android 4.x, console devices. Firefox and Opera tend to support w3c. (Though I have commercial experience to support older devices). I base my support of elements by both: Analytics and caniuse.com
+* Sass should be split up into many files: variables.scss, functions.scss, global.scss, template.scss and modules.scss
+
 
