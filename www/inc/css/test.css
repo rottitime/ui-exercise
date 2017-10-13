@@ -1,0 +1,16 @@
+#wrapper {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+}
+
+#content {
+	width: 100%;
+}
+
+#sidebar {
+	width: 30%;
+}
+
+/*# sourceMappingURL=test.css.map */

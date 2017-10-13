@@ -48,3 +48,9 @@ Add a new link to the header called "sidebar", when clicked on will show/hide th
 Finish up
 ---------
 Once you're finished, send us a link to your fork.
+
+
+Dev notes:
+* Ideally I would add a h1 in header. Or for SEO reasons add a H1 in the #content and have header float at the top e.g. http://jaspaul.com
+* Only support for webkit which covers ios, android 4.x, console devices. Firefox and Opera tend to support w3c as per latest anyaltics for many sites. (Though I have commercial experience to support older devices)
+
